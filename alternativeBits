@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int m=0, num=10,count=0,mod=0,flag=0;
+    while(num!=0){
+    if(num%2==0){
+    mod = num%2;
+    num = num>>1;
+        if(flag==0||flag==-1) flag=1; else{ count=1;break;}
+    }
+    else{
+    mod = num%2;
+    num = num>>1;
+        if(flag==0||flag==1) flag=-1; else {count=1; break;}
+    }
+        
+    }
+    if(count==0) printf("yes"); else printf("no");
+}
